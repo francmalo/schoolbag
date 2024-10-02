@@ -699,47 +699,83 @@
         }
 
 
-@media (max-width: 768px) {
-    .products-area .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
 
-    .products-slider {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .products-slider .slick-prev,
-    .products-slider .slick-next {
-        z-index: 1;
-        width: 30px;
-        height: 30px;
-    }
 
-    .products-slider .slick-prev {
-        left: 10px;
-    }
 
-    .products-slider .slick-next {
-        right: 10px;
-    }
+        @media (max-width: 768px) {
+            .products-slider .slick-slide {
+                margin: 0 10px;
+            }
 
-    .products-slider .slick-prev:before,
-    .products-slider .slick-next:before {
-        font-size: 20px;
-        opacity: 0.8;
-        color: #000; /* Adjust color as needed */
-    }
+            .products-slider .slick-list {
+                margin: 0 -10px;
+            }
 
-    .products-slider .slick-slide {
-        opacity: 0.5;
-        transition: opacity 0.3s ease;
-    }
+            .products-slider .slick-prev,
+            .products-slider .slick-next {
+                z-index: 1;
+                width: 30px;
+                height: 30px;
+            }
 
-    .products-slider .slick-current {
-        opacity: 1;
-    }
-}
+            .products-slider .slick-prev {
+                left: -5px;
+            }
+
+            .products-slider .slick-next {
+                right: -5px;
+            }
+
+            .products-slider .slick-prev:before,
+            .products-slider .slick-next:before {
+                font-size: 20px;
+                opacity: 0.8;
+                color: #FA3F7B;
+                /* Adjust color as needed */
+            }
+
+            .single-product-item {
+                width: calc(50% - 20px);
+                margin: 0 10px;
+            }
+
+            .single-product-item .image img {
+                width: 100%;
+                height: auto;
+            }
+
+            .products-area .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .products-slider {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .single-product-item .content {
+                padding: 10px 5px;
+            }
+
+            .single-product-item .content h3 {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+
+            .single-product-item .content .price {
+                font-size: 12px;
+            }
+
+            .single-product-item .content .rating {
+                font-size: 12px;
+            }
+        }
+
+
+
 
 
 
@@ -832,6 +868,147 @@
     <!-- End Navbar Area -->
 
 
+    <!-- Start Enhanced Banner Area -->
+    <div class="banner-area2 position-relative z-1">
+        <div class="container-fluid p-0">
+            <div class="banner-slider">
+                <!-- slider-area-start -->
+                <section class="slider-area tpslider-delay">
+                    <div class="swiper-container slider-active">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide ">
+                                <div class="tpslider pt-90 pb-0 grey-bg"
+                                    data-background="assets2/img/slider/shape-bg.jpg">
+                                    <div class="container">
+                                        <div class="row align-items-center">
+                                            <div class="col-xxl-5 col-lg-6 col-md-6 col-12 col-sm-6">
+                                                <div class="tpslider__content pt-20">
+                                                    <span class="tpslider__sub-title mb-35">Back-to-School
+                                                        Essentials</span>
+                                                    <h2 class="tpslider__title mb-30">Gear Up for the School Year!</h2>
+                                                    <p>Find the best backpacks, stationery, and accessories <br> to
+                                                        start
+                                                        your school year in style.</p>
+                                                    <div class="tpslider__btn">
+                                                        <a class="tp-btn" href="shop.html">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-7 col-lg-6 col-md-6 col-12 col-sm-6">
+                                                <div class="tpslider__thumb p-relative pt-15">
+                                                    <img class="tpslider__thumb-img" src="assets/img/slider/trial.png"
+                                                        alt="slider-bg">
+                                                    <div class="tpslider__shape d-none d-md-block">
+                                                        <img class="tpslider__shape-one"
+                                                            src="assets/img/slider/178 x 183.png" alt="shape">
+                                                        <img class="tpslider__shape-two"
+                                                            src="assets/img/slider/372 x 238.png" alt="shape">
+                                                        <!-- <img class="tpslider__shape-three"
+                                                            src="assets/img/slider/228 x 207.png" alt="shape"> -->
+                                                        <img class="tpslider__shape-four"
+                                                            src="assets/img/slider/215 x 212.png" alt="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tpslider pt-90 pb-0 grey-bg"
+                                    data-background="assets2/img/slider/shape-bg.jpg">
+                                    <div class="container">
+                                        <div class="row align-items-center">
+                                            <div class="col-xxl-5 col-lg-6 col-md-6 col-sm-6">
+                                                <div class="tpslider__content pt-20">
+                                                    <span class="tpslider__sub-title mb-35">Top Picks for
+                                                        Students</span>
+                                                    <h2 class="tpslider__title mb-30">Stylish Notebooks & <br>
+                                                        Organizers.
+                                                    </h2>
+                                                    <p>Stay organized with our range of fun and functional <br>
+                                                        notebooks,
+                                                        planners, and more.</p>
+                                                    <div class="tpslider__btn">
+                                                        <a class="tp-btn" href="shop.html">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-7 col-lg-6  col-md-6 col-sm-6">
+                                                <div class="tpslider__thumb p-relative">
+                                                    <img class="tpslider__thumb-img"
+                                                        src="assets/img/slider/824 x 582-3.png" alt="slider-bg">
+                                                    <div class="tpslider__shape d-none d-md-block">
+                                                        <img class="tpslider__shape-one"
+                                                            src="assets/img/slider/178 x 183-2.png" alt="shape">
+                                                        <img class="tpslider__shape-two"
+                                                            src="assets/img/slider/372 x 238-2.png" alt="shape">
+                                                        <!-- <img class="tpslider__shape-three"
+                                                            src="assets/img/slider/228 x 207-2.png" alt="shape"> -->
+                                                        <img class="tpslider__shape-four"
+                                                            src="assets/img/slider/215 x 212-2.png" alt="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="tpslider pt-90 pb-0 grey-bg"
+                                    data-background="assets2/img/slider/shape-bg.jpg">
+                                    <div class="container">
+                                        <div class="row align-items-center">
+                                            <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                <div class="tpslider__content pt-20">
+                                                    <span class="tpslider__sub-title mb-35">Limited Time Offer</span>
+                                                    <h2 class="tpslider__title mb-30">Up to 50% Off <br> School
+                                                        Accessories!
+                                                    </h2>
+                                                    <p>Get great deals on pencil cases, water bottles, <br> lunch bags,
+                                                        and
+                                                        more.</p>
+                                                    <div class="tpslider__btn">
+                                                        <a class="tp-btn" href="shop.html">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                                <div class="tpslider__thumb p-relative">
+                                                    <img class="tpslider__thumb-img"
+                                                        src="assets/img/slider//824 x 582-2.png" alt="slider-bg">
+                                                    <div class="tpslider__shape d-none d-md-block">
+                                                        <img class="tpslider__shape-one"
+                                                            src="assets/img/slider/178 x 183-3.png" alt="shape">
+                                                        <img class="tpslider__shape-two"
+                                                            src="assets/img/slider/372 x 238-3.png" alt="shape">
+                                                        <!-- <img class="tpslider__shape-three"
+                                                            src="assets/img/slider/228 x 207-3.png" alt="shape"> -->
+                                                        <img class="tpslider__shape-four"
+                                                            src="assets/img/slider/215 x 212-3.png" alt="shape">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tpslider__arrow d-none  d-xxl-block">
+                            <button class="tpsliderarrow tpslider__arrow-prv"><i class="icon-chevron-left"></i></button>
+                            <button class="tpsliderarrow tpslider__arrow-nxt"><i
+                                    class="icon-chevron-right"></i></button>
+                        </div>
+                        <div class="slider-pagination d-xxl-none"></div>
+                    </div>
+                </section>
+                <!-- slider-area-end -->
+
+
+            </div>
+        </div>
+    </div>
+    <!-- End Enhanced Banner Area -->
 
     <!-- Start Categories Area -->
     <div class="categories-area grey-bg pb-40 pt-125 pb-100">
@@ -1278,6 +1455,700 @@
     <!-- End Featured Products Area -->
 
 
+    <!-- Start Discount Area -->
+    <div class="discount-area grey-bg">
+        <div class="container">
+            <div class="discount-box position-relative z-1" data-cue="slideInUp">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                        <div class="content text-center">
+                            <h2>
+                                Chocolate Festival
+                            </h2>
+                            <span class="d-block">
+                                Up To <span>50%</span> Off
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+                        <div class="image">
+                            <img src="assets/images/Untitled design (10).png" alt="discount-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="discount-shape1">
+                    <img src="assets/images/discount/discount-shape1.png" alt="discount-shape1">
+                </div>
+                <div class="discount-shape2">
+                    <img src="assets/images/discount/discount-shape2.png" alt="discount-shape2">
+                </div>
+                <div class="discount-shape3">
+                    <img src="assets/images/discount/discount-shape3.png" alt="discount-shape3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Discount Area -->
+
+
+
+    <!-- Start Best Offers This Week Area -->
+    <div class="best-offers-this-week-area grey-bg pt-125 pb-100">
+        <div class="container">
+            <div class="section-title d-md-flex align-items-center justify-content-between left-section-title">
+                <h2 class="mb-0">
+                    <span class="position-relative">
+                        Best offers this week
+                    </span>
+                </h2>
+                <a href="shop.html" class="default-btn">
+                    All Products
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="row" data-cues="slideInUp" data-group="bestContent">
+                        <div class="col-lg-12 col-sm-6">
+                            <div class="best-offers-this-week-box position-relative">
+                                <img src="assets/images/Untitled design (11).png" alt="best-offers-this-week-image">
+                                <div class="content">
+                                    <span class="d-block" style="color: white;">
+                                        Up to 50% Off
+                                    </span>
+                                    <h3 style="color: black;">
+                                        <strong>Stationary</strong>
+                                    </h3>
+                                    <a href="shop.html" class="default-btn">
+                                        Shop Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-6">
+                            <div class="best-offers-this-week-box position-relative">
+                                <img src="assets/images/Untitled design (12).png" alt="best-offers-this-week-image">
+                                <div class="content">
+                                    <span class="d-block">
+                                        Up to 30% Off
+                                    </span>
+                                    <h3 style="color: black;">
+                                        <strong>Collection</strong>
+                                    </h3>
+                                    <a href="shop.html" class="default-btn">
+                                        Shop Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12">
+                    <div class="row" data-cues="slideInUp" data-group="weekContent">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="product-box text-center">
+                                <div class="image position-relative">
+                                    <a href="product-details.html" class="d-block">
+                                        <img src="assets/images/products/product9.jpg" alt="product-image">
+                                    </a>
+                                    <div class="discount">
+                                        -25%
+                                    </div>
+                                    <div class="hot">
+                                        Hot
+                                    </div>
+                                    <div class="buttons-list d-flex align-items-center justify-content-center">
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </button>
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <a href="#" class="d-inline-block" data-bs-toggle="modal"
+                                            data-bs-target="#productQuickViewModal">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>
+                                        <a href="product-details.html">
+                                            Frosted Flakes
+                                        </a>
+                                    </h3>
+                                    <div class="price">
+                                        $21.00 - $50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="product-box text-center">
+                                <div class="image position-relative">
+                                    <a href="product-details.html" class="d-block">
+                                        <img src="assets/images/products/product10.jpg" alt="product-image">
+                                    </a>
+                                    <div class="buttons-list d-flex align-items-center justify-content-center">
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </button>
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <a href="#" class="d-inline-block" data-bs-toggle="modal"
+                                            data-bs-target="#productQuickViewModal">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>
+                                        <a href="product-details.html">
+                                            Frosted Flakes
+                                        </a>
+                                    </h3>
+                                    <div class="price">
+                                        $21.00 - $50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="product-box text-center">
+                                <div class="image position-relative">
+                                    <a href="product-details.html" class="d-block">
+                                        <img src="assets/images/products/product11.jpg" alt="product-image">
+                                    </a>
+                                    <div class="discount">
+                                        -25%
+                                    </div>
+                                    <div class="hot">
+                                        Hot
+                                    </div>
+                                    <div class="buttons-list d-flex align-items-center justify-content-center">
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </button>
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <a href="#" class="d-inline-block" data-bs-toggle="modal"
+                                            data-bs-target="#productQuickViewModal">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>
+                                        <a href="product-details.html">
+                                            Tiffin Box
+                                        </a>
+                                    </h3>
+                                    <div class="price">
+                                        $21.00 - $50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="product-box text-center">
+                                <div class="image position-relative">
+                                    <a href="product-details.html" class="d-block">
+                                        <img src="assets/images/products/product12.jpg" alt="product-image">
+                                    </a>
+                                    <div class="discount">
+                                        -25%
+                                    </div>
+                                    <div class="hot">
+                                        Hot
+                                    </div>
+                                    <div class="buttons-list d-flex align-items-center justify-content-center">
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </button>
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <a href="#" class="d-inline-block" data-bs-toggle="modal"
+                                            data-bs-target="#productQuickViewModal">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>
+                                        <a href="product-details.html">
+                                            Kids Chair
+                                        </a>
+                                    </h3>
+                                    <div class="price">
+                                        $21.00 - $50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="product-box text-center">
+                                <div class="image position-relative">
+                                    <a href="product-details.html" class="d-block">
+                                        <img src="assets/images/products/product13.jpg" alt="product-image">
+                                    </a>
+                                    <div class="buttons-list d-flex align-items-center justify-content-center">
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </button>
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <a href="#" class="d-inline-block" data-bs-toggle="modal"
+                                            data-bs-target="#productQuickViewModal">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>
+                                        <a href="product-details.html">
+                                            Tiffin Snacks
+                                        </a>
+                                    </h3>
+                                    <div class="price">
+                                        $21.00 - $50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="product-box text-center">
+                                <div class="image position-relative">
+                                    <a href="product-details.html" class="d-block">
+                                        <img src="assets/images/products/product14.jpg" alt="product-image">
+                                    </a>
+                                    <div class="buttons-list d-flex align-items-center justify-content-center">
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </button>
+                                        <button type="button" class="d-inline-block">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </button>
+                                        <a href="#" class="d-inline-block" data-bs-toggle="modal"
+                                            data-bs-target="#productQuickViewModal">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h3>
+                                        <a href="product-details.html">
+                                            Pumpkin Spinach
+                                        </a>
+                                    </h3>
+                                    <div class="price">
+                                        $21.00 - $50
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Best Offers This Week Area -->
+
+
+    <!-- Start Brands Area -->
+    <div class="brands-area grey-bg">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Shop By Brands</h2>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <a href="shop.html">
+                        <img src="assets/images/brands/brand1.png" alt="brand-image">
+                    </a>
+                </div>
+                <div class="brand-item">
+                    <a href="shop.html">
+                        <img src="assets/images/brands/brand2.png" alt="brand-image">
+                    </a>
+                </div>
+                <div class="brand-item">
+                    <a href="shop.html">
+                        <img src="assets/images/brands/brand3.png" alt="brand-image">
+                    </a>
+                </div>
+                <div class="brand-item">
+                    <a href="shop.html">
+                        <img src="assets/images/brands/brand4.png" alt="brand-image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Brands Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer-area  pt-125">
+        <div class="container">
+            <div class="footer-inner-box">
+                <div class="row justify-content-center" data-cues="slideInUp" data-group="footerInnerContent">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="box d-flex align-items-center position-relative">
+                            <div class="icon">
+                                <img src="assets/images/icons/icon1.png" alt="icon">
+                            </div>
+                            <div>
+                                <h3>Money Back Guarantee</h3>
+                                <span class="d-block">With a 30 day</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="box d-flex align-items-center position-relative">
+                            <div class="icon">
+                                <img src="assets/images/icons/icon2.png" alt="icon">
+                            </div>
+                            <div>
+                                <h3>Win $100 to Shop</h3>
+                                <span class="d-block">Exiting gifts and 10% off on</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="box d-flex align-items-center position-relative">
+                            <div class="icon">
+                                <img src="assets/images/icons/icon3.png" alt="icon">
+                            </div>
+                            <div>
+                                <h3>Free Shipping Delivery</h3>
+                                <span class="d-block">Order Over $100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-cues="slideInUp" data-group="footerContent">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-footer-widget">
+                        <a href="index.html" class="logo d-inline-block">
+                            <img src="assets/images/logow.png" alt="white-logo">
+                        </a>
+                        <p>
+                            We value, appreciate and respect ideas, suggestions and specifications from every client
+                            while treating each of our customers as unique and esteemed.
+                        </p>
+                        <div class="info">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="assets/images/icons/icon4.png" alt="icon">
+                                </div>
+                                <span>HotLine Order</span>
+                            </div>
+                            <a href="tel:(012)3456789">(012) 345 6789</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>
+                            Useful links
+                        </h4>
+                        <ul class="ps-0 mb-0 list-unstyled custom-links">
+                            <li>
+                                <a href="shop.html">
+                                    New Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="shop.html">
+                                    Best Sellers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="shop.html">
+                                    Bundle & Save
+                                </a>
+                            </li>
+                            <li>
+                                <a href="shop.html">
+                                    Online Gift Card
+                                </a>
+                            </li>
+                            <li>
+                                <a href="shop.html">
+                                    Discount
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>
+                            My account
+                        </h4>
+                        <ul class="ps-0 mb-0 list-unstyled custom-links">
+                            <li>
+                                <a href="#">
+                                    My Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    My Order History
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    My Wishlist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Order Tracking
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Shopping Cart
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>
+                            Sign Up for Our Newsletter
+                        </h4>
+                        <p>
+                            Leave your email to get all hot deals & news which benefit you most!
+                        </p>
+                        <form>
+                            <div class="icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <input type="text" class="input-email d-block w-100 border-0" placeholder="Your email">
+                            <button type="submit">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div class="social-links">
+                            <a href="#" target="_blank" class="d-inline-block facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" target="_blank" class="d-inline-block twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" target="_blank" class="d-inline-block linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <p>
+                            © 2024 <span>School Bag</span>. All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <!-- <div class="payment-methods">
+                                    <img src="assets/images/payment-methods/visa-electron.png" alt="visa-electron">
+                                    <img src="assets/images/payment-methods/visa.png" alt="visa">
+                                    <img src="assets/images/payment-methods/master-card.png" alt="master-card">
+                                    <img src="assets/images/payment-methods/american-express.png" alt="american-express">
+                                </div> -->
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="ps-0 mb-0 list-unstyled">
+                            <li class="d-inline-block position-relative">
+                                <a href="#">
+                                    Privacy & Cookie Policy
+                                </a>
+                            </li>
+                            <li class="d-inline-block position-relative">
+                                <a href="#">
+                                    Terms Of Services
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- Start Product Quickview Modal -->
+    <div class="modal fade productQuickViewModal grey-bg" id="productQuickViewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="products-details-desc">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="products-details-image-tabs">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="pdit1-tab-pane" role="tabpanel"
+                                        tabindex="0">
+                                        <img src="assets/images/products/product-details.jpg"
+                                            alt="product-details-image">
+                                    </div>
+                                    <div class="tab-pane fade" id="pdit2-tab-pane" role="tabpanel" tabindex="0">
+                                        <img src="assets/images/products/product-details.jpg"
+                                            alt="product-details-image">
+                                    </div>
+                                    <div class="tab-pane fade" id="pdit3-tab-pane" role="tabpanel" tabindex="0">
+                                        <img src="assets/images/products/product-details.jpg"
+                                            alt="product-details-image">
+                                    </div>
+                                    <div class="tab-pane fade" id="pdit4-tab-pane" role="tabpanel" tabindex="0">
+                                        <img src="assets/images/products/product-details.jpg"
+                                            alt="product-details-image">
+                                    </div>
+                                </div>
+                                <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pdit1-tab" data-bs-toggle="tab"
+                                            data-bs-target="#pdit1-tab-pane" type="button" role="tab"
+                                            aria-controls="pdit1-tab-pane" aria-selected="true">
+                                            <img src="assets/images/products/product1.jpg" alt="product-image">
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pdit2-tab" data-bs-toggle="tab"
+                                            data-bs-target="#pdit2-tab-pane" type="button" role="tab"
+                                            aria-controls="pdit2-tab-pane" aria-selected="false">
+                                            <img src="assets/images/products/product2.jpg" alt="product-image">
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pdit3-tab" data-bs-toggle="tab"
+                                            data-bs-target="#pdit3-tab-pane" type="button" role="tab"
+                                            aria-controls="pdit3-tab-pane" aria-selected="false">
+                                            <img src="assets/images/products/product3.jpg" alt="product-image">
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pdit4-tab" data-bs-toggle="tab"
+                                            data-bs-target="#pdit4-tab-pane" type="button" role="tab"
+                                            aria-controls="pdit4-tab-pane" aria-selected="false">
+                                            <img src="assets/images/products/product4.jpg" alt="product-image">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="products-details-content">
+                                <h3>
+                                    Floaster Flakes
+                                </h3>
+                                <span class="price d-block">
+                                    $21.00
+                                </span>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>
+                                        (03 Reviews)
+                                    </span>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor amet, consectetur adicing elit, sed eiusmod tempor incididunt.
+                                    Morbi purus nibh.
+                                </p>
+                                <div class="add-to-cart">
+                                    <div class="input-counter">
+                                        <span class="minus-btn"><i class="fa-solid fa-minus"></i></span>
+                                        <input type="text" value="1">
+                                        <span class="plus-btn"><i class="fa-solid fa-plus"></i></span>
+                                    </div>
+                                    <button type="submit" class="default-btn">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                        Add To Cart
+                                    </button>
+                                </div>
+                                <button class="add-to-wishlist position-relative d-inline-block border-0 bg-transparent"
+                                    type="button">
+                                    <i class="fa-regular fa-heart"></i>
+                                    Add to Wishlist
+                                </button>
+                                <ul class="features-list ps-0 mb-0 list-unstyled">
+                                    <li>
+                                        <span class="fw-semibold">
+                                            Categories:
+                                        </span>
+                                        Vegetables
+                                    </li>
+                                    <li>
+                                        <span class="fw-semibold">
+                                            Brand:
+                                        </span>
+                                        Hometities
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- End Product Quickview Modal -->
 
 
     <!-- Go Top -->
@@ -1331,7 +2202,7 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
-                 responsive: [
+                responsive: [
                     {
                         breakpoint: 1024,
                         settings: {
@@ -1353,7 +2224,7 @@
                     {
                         breakpoint: 480,
                         settings: {
-                            slidesToShow: 1,
+                            slidesToShow: 2,
                             slidesToScroll: 1,
                             centerMode: true,
                             centerPadding: '40px'
