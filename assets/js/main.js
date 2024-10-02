@@ -255,4 +255,228 @@
         $('#preloader').fadeOut()
     })
 
+
+
+
+
+
+ $(document).ready(function () {
+            $('.products-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            centerMode: true,
+                            centerPadding: '40px'
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            centerMode: true,
+                            centerPadding: '40px'
+                        }
+                    }
+                ]
+            });
+
+
+            $('.filter').on('click', function () {
+                var filter = $(this).data('filter');
+                if (filter == 'all') {
+                    $('.products-slider').slick('slickUnfilter');
+                } else {
+                    $('.products-slider').slick('slickUnfilter').slick('slickFilter', filter);
+                }
+            });
+
+
+            $('.category-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+
+
+
+
+        });
+
+        const navbar = document.getElementById('navbar');
+        const userButton = document.getElementById('user-button');
+        const userDropdown = document.getElementById('user-dropdown');
+        const cartButton = document.getElementById('cart-button');
+        const cartDropdown = document.getElementById('cart-dropdown');
+        const cartCount = document.getElementById('cart-count');
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        const menuToggle = document.getElementById('menu-toggle');
+        const navOverlay = document.getElementById('nav-overlay');
+        const closeMenu = document.getElementById('close-menu');
+
+
+        // Sample cart data with image paths
+        let cart = [
+            { name: "Product 1", price: 19.99, quantity: 1, image: "assets/images/products/product29.png" },
+            { name: "Product 2", price: 29.99, quantity: 2, image: "assets/images/products/product29.png" }
+        ];
+
+        function toggleDropdown(dropdown) {
+            dropdown.classList.toggle('active');
+        }
+        function updateCart() {
+            cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="empty-cart">Your cart is empty</div>';
+                document.querySelector('.cart-buttons').style.display = 'none';
+            } else {
+                cartItems.innerHTML = cart.map((item, index) => `
+            <div class="cart-item">
+                <img src="${item.image}" alt="${item.name}">
+                <div class="cart-item-details">
+                    <div class="cart-item-name">${item.name}</div>
+                    <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+                    <div class="cart-item-quantity">Quantity: ${item.quantity}</div>
+                </div>
+                <button class="cart-item-remove" onclick="removeItem(${index})">&times;</button>
+            </div>
+        `).join('');
+                document.querySelector('.cart-buttons').style.display = 'flex';
+            }
+
+            cartTotal.textContent = cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
+        }
+
+        // Add event listeners for the new buttons
+        document.querySelector('.btn-view-cart').addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('View Cart clicked');
+            // Add your view cart logic here
+        });
+
+        document.querySelector('.btn-checkout').addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log('Checkout clicked');
+            // Add your checkout logic here
+        });
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+        userButton.addEventListener('click', () => toggleDropdown(userDropdown));
+        cartButton.addEventListener('click', () => toggleDropdown(cartDropdown));
+
+        // Toggle mobile menu overlay
+        menuToggle.addEventListener('click', () => {
+            navOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when overlay is active
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = ''; // Re-enable scrolling
+        });
+
+        // Close overlay when clicking on a link
+        navOverlay.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!userButton.contains(event.target)) {
+                userDropdown.classList.remove('active');
+            }
+            if (!cartButton.contains(event.target)) {
+                cartDropdown.classList.remove('active');
+            }
+        });
+
+        // Sticky navbar functionality
+        const navbarOffset = navbar.offsetTop;
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset >= navbarOffset) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+
+        // Initial cart update
+        updateCart();
+        // window.onscroll = function() {
+        //     makeSticky();
+        // };
+        //
+        // const stickyDiv = document.getElementById('sticky-div');
+        // const stickyOffset = stickyDiv.offsetTop;
+        //
+        // function makeSticky() {
+        //     if (window.pageYOffset >= stickyOffset) {
+        //         stickyDiv.classList.add("sticky");
+        //     } else {
+        //         stickyDiv.classList.remove("sticky");
+        //     }
+        // }
+
+
+
+
+
+
+
 }(jQuery));
